@@ -1,7 +1,6 @@
 import { Heart } from 'lucide-react';
 import flower1Image from '@assets/flower1_1759854441524.png';
 import flowerImage from '@assets/flower_1759854441531.png';
-import backgroundImage from '@assets/first_page_bg.jpg';
 
 // Polaroid images
 import eleganceImage from '@assets/pre-debut8_1762962945662.jpg';
@@ -20,15 +19,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen py-20 px-4">
-      {/* Background Image */}
-      <img
-        src={backgroundImage}
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-black/30" />
+    <div className="relative flex flex-col items-center justify-center min-h-screen py-20 px-4" style={{ backgroundColor: 'transparent' }}>
       {/* Modern Minimalist Invitation */}
       <div
         className="relative z-10 max-w-2xl w-full mb-20"
