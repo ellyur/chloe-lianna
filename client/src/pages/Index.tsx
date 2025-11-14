@@ -80,13 +80,13 @@ const Index = () => {
           alt="Lianna Chloe Debut Cover 2"
         />
         <HashtagGiftsSection />
-        <MemorableMomentsSection />
         <RSVPSection />
         <CoverSection
           imageUrl={cover3Image}
           alt="Lianna Chloe Debut Cover 3"
         />
         <EntourageSection />
+        <MemorableMomentsSection />
         <FAQSection />
         <Footer />
       </main>
