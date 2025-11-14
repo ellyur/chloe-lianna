@@ -3,9 +3,11 @@ import attireImage from '@assets/image_1763049471464.png';
 
 const DressCodeSection = () => {
   const colorPalette = [
-    { name: 'White', color: '#FFFFFF', hex: '#FFFFFF' },
-    { name: 'Cream', color: '#FFFDD0', hex: '#FFFDD0' },
-    { name: 'Snow White', color: '#FFFAFA', hex: '#FFFAFA' }
+    { name: 'Ivory', color: '#FFFFF0', hex: '#FFFFF0' },
+    { name: 'Cream White', color: '#FFFDD0', hex: '#FFFDD0' },
+    { name: 'Soft Warm White', color: '#FAF0E6', hex: '#FAF0E6' },
+    { name: 'Vanilla White', color: '#F3E5AB', hex: '#F3E5AB' },
+    { name: 'Beige White', color: '#F5F5DC', hex: '#F5F5DC' }
   ];
 
   return (
@@ -99,7 +101,7 @@ const DressCodeSection = () => {
             <h3 className="text-2xl font-display font-medium text-foreground mb-6 text-center">
               Color Palette
             </h3>
-            <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-4xl mx-auto">
               {colorPalette.map((colorItem, index) => (
                 <div key={index} className="text-center group">
                   <div 
