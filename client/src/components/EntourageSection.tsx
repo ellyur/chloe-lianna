@@ -8,10 +8,10 @@ import toastChloeImage from '@assets/toast_1763128219535.jpg';
 import treasuresChloeImage from '@assets/treasures_1763128225008.jpg';
 
 // Import the name list images (green cards with gold text)
-import lanternsListImage from '@assets/LANTERNS_1763044819112.png';
-import rosesListImage from '@assets/ROSES_1763044812029.jpg';
-import toastListImage from '@assets/TOAST_1763044812030.png';
-import treasuresListImage from '@assets/TREASURES_1763044812031.png';
+import lanternsListImage from '@assets/lanterns_list.jpg';
+import rosesListImage from '@assets/roses_list.jpg';
+import toastListImage from '@assets/toast_list.jpg';
+import treasuresListImage from '@assets/treasures_list.jpg';
 
 interface ImageItem {
   type: 'chloe' | 'list';
