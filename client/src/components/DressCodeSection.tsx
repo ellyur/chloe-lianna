@@ -4,10 +4,10 @@ import attireImage from '@assets/image_1763049471464.png';
 const DressCodeSection = () => {
   const colorPalette = [
     { name: 'Ivory', color: '#FFFFF0', hex: '#FFFFF0' },
-    { name: 'Cream White', color: '#FFFDD0', hex: '#FFFDD0' },
+    { name: 'Cream White', color: '#FCFBF4', hex: '#FCFBF4' },
     { name: 'Soft Warm White', color: '#FAF0E6', hex: '#FAF0E6' },
-    { name: 'Vanilla White', color: '#F3E5AB', hex: '#F3E5AB' },
-    { name: 'Beige White', color: '#F5F5DC', hex: '#F5F5DC' }
+    { name: 'Vanilla White', color: '#F6EEE5', hex: '#F6EEE5' },
+    { name: 'Beige White', color: '#F2EBE2', hex: '#F2EBE2' }
   ];
 
   return (
