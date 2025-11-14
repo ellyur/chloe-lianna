@@ -636,7 +636,7 @@
 
   .invitation-loop-track {
     display: flex;
-    animation: invitationLoop 40s linear infinite;
+    animation: invitationLoop 20s linear infinite;
     width: fit-content;
   }
 
