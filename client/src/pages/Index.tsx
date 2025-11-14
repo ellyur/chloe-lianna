@@ -21,6 +21,7 @@ import Footer from '@/components/Footer';
 import CoverSection from '@/components/CoverSection';
 import InvitationRevealSection from '@/components/InvitationRevealSection';
 import SaveTheDateSection from '@/components/SaveTheDateSection';
+import SaveTheDatePhotos from '@/components/SaveTheDatePhotos';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
 import { AnimationContext } from '@/contexts/AnimationContext';
 
@@ -68,6 +69,7 @@ const Index = () => {
         <ImageLoop />
         <StorySection />
         <SaveTheDateSection audioRef={audioRef} />
+        <SaveTheDatePhotos />
         <ScrollTriggeredTimeline />
         <VenueSection />
         <CoverSection
