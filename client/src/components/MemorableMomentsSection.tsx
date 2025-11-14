@@ -13,9 +13,11 @@ import prenup8 from '@assets/pre-debut8_1763041921347.jpg';
 import prenup10 from '@assets/pre-debut10_1763041921347.jpg';
 import prenup11 from '@assets/pre-debut11_1763041921348.jpg';
 import prenup12 from '@assets/pre-debut12_1763041921348.jpg';
+import cover1 from '@assets/cover1_1762962621134.jpg';
 
 const MemorableMomentsSection = () => {
   const images = [
+    cover1,
     prenup1,
     prenup2,
     prenup3,
