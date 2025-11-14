@@ -35,7 +35,7 @@ const CountdownSection = () => {
   return (
     <motion.section 
       id="countdown" 
-      className="section-pastel-blue bg-primary"
+      className="section-pastel-blue bg-white"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 2.5 }}
@@ -47,7 +47,7 @@ const CountdownSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
         >
-          <h2 className="text-4xl font-display font-light text-white mb-2" data-testid="text-countdown-title">
+          <h2 className="text-4xl font-display font-light text-foreground mb-2" data-testid="text-countdown-title">
             The celebration begins soon
           </h2>
         </motion.div>
@@ -77,7 +77,7 @@ const CountdownSection = () => {
               data-testid={`countdown-${item.label.toLowerCase()}`}
             >
               <motion.div 
-                className="text-5xl md:text-6xl lg:text-7xl font-display mb-1 text-gold"
+                className="text-5xl md:text-6xl lg:text-7xl font-display mb-1 text-primary"
                 key={item.value}
                 initial={{ opacity: 0.7, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -85,7 +85,7 @@ const CountdownSection = () => {
               >
                 {item.value.toString().padStart(2, '0')}
               </motion.div>
-              <div className="text-xs font-body uppercase tracking-wider text-white">
+              <div className="text-xs font-body uppercase tracking-wider text-muted-foreground">
                 {item.label}
               </div>
             </motion.div>
