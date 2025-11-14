@@ -647,8 +647,8 @@
 
   .invitation-loop-item {
     flex-shrink: 0;
-    margin-right: 4rem;
-    padding: 0 2rem;
+    margin-right: 1.5rem;
+    padding: 0 0.5rem;
   }
 
   @keyframes invitationLoop {
