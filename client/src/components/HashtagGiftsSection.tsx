@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { optimizeCloudinaryUrl } from '@/lib/cloudinaryOptimize';
 import backgroundImage from '@assets/giftGuide_1763041381821.jpg';
-import qrCodeImage from '@assets/gift_1763042179932.jpg';
 
 const HashtagGiftsSection = () => {
   return (
@@ -77,15 +76,6 @@ const HashtagGiftsSection = () => {
                   <br />
                   Lianna Chloe
                 </p>
-                
-                <div className="flex justify-center pt-4">
-                  <img 
-                    src={qrCodeImage}
-                    alt="InstaPay Payment QR Code"
-                    className="w-full max-w-sm rounded-lg shadow-lg"
-                    data-testid="img-qr-code"
-                  />
-                </div>
               </motion.div>
             </motion.div>
           </div>
