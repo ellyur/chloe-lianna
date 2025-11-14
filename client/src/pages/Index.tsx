@@ -50,7 +50,7 @@ const Index = () => {
         preload="auto"
         style={{ display: 'none' }}
         data-testid="background-audio"
-        src="https://res.cloudinary.com/dweesccy9/video/upload/v1762959625/Taylor_Swift_-_Enchanted_ltxqsv.mp3"
+        src="https://res.cloudinary.com/dgwqiv95y/video/upload/v1763128421/Lana_Del_Rey_-_Say_Yes_To_Heaven_Lyrics_xmgyjz.mp3"
       />
 
       <MusicConsentPopup 
