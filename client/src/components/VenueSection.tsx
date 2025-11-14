@@ -8,7 +8,7 @@ const VenueSection = () => {
   const venue = {
     title: 'Grand Reception',
     name: 'Artan Garden',
-    address: 'Manila, Philippines',
+    address: '92 J.P Rizal St. Sta. Lucia, Novaliches, Quezon City',
     image: receptionImage,
     mapUrl: 'https://maps.app.goo.gl/m5RjpgL45ocukpnj8',
     mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3573347851784!2d121.0328!3d14.5884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f9c9c9c9c9%3A0x9c9c9c9c9c9c9c9c!2sArtan%20Garden!5e0!3m2!1sen!2sph!4v1234567890',
