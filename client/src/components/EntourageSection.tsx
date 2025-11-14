@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 // Import the 18 things images (Chloe photos)
-import lanternsChloeImage from '@assets/18-lanters-chloe_1763042970043.jpg';
-import rosesChloeImage from '@assets/18roses-chloe_1763042970044.jpg';
-import toastChloeImage from '@assets/18toast-chloe_1763042970044.jpg';
-import treasuresChloeImage from '@assets/18-treasures-chloe_1763042970045.jpg';
+import lanternsChloeImage from '@assets/lantern_1763128211292.jpg';
+import rosesChloeImage from '@assets/rosess_1763128219533.jpg';
+import toastChloeImage from '@assets/toast_1763128219535.jpg';
+import treasuresChloeImage from '@assets/treasures_1763128225008.jpg';
 
 // Import the name list images (green cards with gold text)
 import lanternsListImage from '@assets/LANTERNS_1763044819112.png';
