@@ -1,22 +1,18 @@
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import prenup6 from '@assets/prenup6_1762584613686.jpg';
-import prenup8 from '@assets/prenup8_1762584613686.jpg';
-import prenup10 from '@assets/prenup10_1762584613687.jpg';
-import prenup12 from '@assets/prenup12_1760518054638.jpg';
-import cover3 from '@assets/cover3_1762962621136.jpg';
-import giftGuide from '@assets/giftGuide_1763041381821.jpg';
+import lantersChloe from '@assets/18-lanters-chloe_1763134041151.jpg';
+import rosesChloe from '@assets/18roses-chloe_1763134041152.jpg';
+import treasuresChloe from '@assets/18-treasures-chloe_1763134041153.jpg';
+import cover1 from '@assets/cover1_1763134041154.jpg';
 
 const ImageLoop = () => {
   const { animationsEnabled } = useAnimationContext();
   
   // Array of images to loop through
   const images = [
-    { src: prenup6, alt: 'Prenup 6' },
-    { src: prenup8, alt: 'Prenup 8' },
-    { src: prenup10, alt: 'Prenup 10' },
-    { src: prenup12, alt: 'Prenup 12' },
-    { src: cover3, alt: 'Cover 3' },
-    { src: giftGuide, alt: 'Gift Guide' },
+    { src: lantersChloe, alt: '18 Lanterns' },
+    { src: rosesChloe, alt: '18 Roses' },
+    { src: treasuresChloe, alt: '18 Treasures' },
+    { src: cover1, alt: 'Cover' },
   ];
 
   // Repeat the image set multiple times for continuous loop
