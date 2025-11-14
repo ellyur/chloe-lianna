@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import attireImage from '@assets/image_1763049471464.png';
+import attireImage from '@assets/image_1763135369291.png';
 
 const DressCodeSection = () => {
   const colorPalette = [
@@ -72,7 +72,7 @@ const DressCodeSection = () => {
               For Women
             </h3>
             <p className="text-base text-foreground text-center leading-relaxed">
-              Elegant dresses, cocktail dresses, or formal gowns in semi-formal or formal style. Dress length should be above the knee or over the knee, but not too long.
+              Elegant dresses, cocktail dresses, or formal gowns in semi-formal or formal style. Dress length may be above the knee, knee-length, or long gowns are also welcome.
             </p>
           </div>
 
