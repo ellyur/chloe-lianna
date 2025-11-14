@@ -57,8 +57,11 @@ const ImageLightbox = ({ images, isOpen, onClose, initialIndex = 0 }: ImageLight
         {/* Close/Exit button */}
         <Button
           variant="outline"
-          className="absolute top-4 right-4 text-white border-white/30 hover:bg-white/20 bg-black/40 z-10 gap-2"
-          onClick={onClose}
+          className="fixed top-20 right-4 text-white border-white/30 hover:bg-white/20 bg-black/40 z-[201] gap-2 shadow-lg"
+          onClick={(e) => {
+            e.stopPropagation();
+            onClose();
+          }}
           data-testid="button-close-lightbox"
         >
           <X className="w-5 h-5" />
