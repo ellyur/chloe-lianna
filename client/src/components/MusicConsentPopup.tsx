@@ -2,7 +2,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Heart } from 'lucide-react';
 import { Dialog, DialogContent, DialogOverlay, DialogPortal } from '@/components/ui/dialog';
-import backgroundImage from '@assets/first_page_bg.jpg';
 
 interface MusicConsentPopupProps {
   onConsent: (consent: boolean) => void;
@@ -25,12 +24,15 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
               exit={{ opacity: 0 }}
               className="fixed inset-0 z-[100]"
             >
-              {/* Background image overlay */}
-              <img
-                src={backgroundImage}
-                alt=""
+              {/* Background video overlay */}
+              <video
+                src="https://res.cloudinary.com/dpze6fsio/video/upload/v1763137129/Image_Animation_and_Video_Generation_f4uusc.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="fixed inset-0 w-full h-full object-cover z-[100]"
-                data-testid="background-image"
+                data-testid="background-video"
               />
               <div className="fixed inset-0 bg-black/40 z-[101]" />
             </motion.div>
