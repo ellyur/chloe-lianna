@@ -1,75 +1,28 @@
-import { useEffect, useRef } from 'react';
+import DomeGallery from './DomeGallery';
+import cover1Image from '@assets/cover1_1762962621134.jpg';
+import cover2Image from '@assets/cover2_1762962621135.jpg';
+import cover3Image from '@assets/cover3_1762962621136.jpg';
+import lanternsImage from '@assets/18-lanters-chloe_1763042970043.jpg';
+import rosesImage from '@assets/18roses-chloe_1763042970044.jpg';
+import toastImage from '@assets/18toast-chloe_1763042970044.jpg';
+import treasuresImage from '@assets/18-treasures-chloe_1763042970045.jpg';
+import ceremonyImage from '@assets/ceremony_1762584476279.png';
 
 interface SaveTheDateSectionProps {
   audioRef: React.RefObject<HTMLAudioElement>;
 }
 
 const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-
-  useEffect(() => {
-    const iframe = iframeRef.current;
-    if (!iframe) return;
-
-    const iframeId = 'save-the-date-youtube-iframe';
-    iframe.id = iframeId;
-
-    const initializeYouTubeAPI = () => {
-      iframe.contentWindow?.postMessage(
-        JSON.stringify({
-          event: 'listening',
-          id: iframeId,
-          channel: 'widget'
-        }),
-        '*'
-      );
-    };
-
-    iframe.addEventListener('load', initializeYouTubeAPI);
-    
-    if (iframe.contentWindow) {
-      initializeYouTubeAPI();
-    }
-
-    return () => {
-      iframe.removeEventListener('load', initializeYouTubeAPI);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleMessage = (event: MessageEvent) => {
-      if (event.origin !== 'https://www.youtube.com') return;
-      
-      if (!audioRef.current) return;
-
-      try {
-        const data = JSON.parse(event.data);
-        
-        // Only respond to messages from the Save the Date iframe specifically
-        if (data.id === 'save-the-date-youtube-iframe' && data.event === 'infoDelivery' && data.info) {
-          const playerState = data.info.playerState;
-          
-          if (playerState === 1) {
-            audioRef.current.pause();
-            console.log('Save the Date video playing - background music paused');
-          } else if (playerState === 2 || playerState === 0) {
-            audioRef.current.play().catch((error) => {
-              console.log('Background music resume failed:', error);
-            });
-            console.log('Save the Date video paused/ended - background music resumed');
-          }
-        }
-      } catch (e) {
-        // Ignore parsing errors
-      }
-    };
-
-    window.addEventListener('message', handleMessage);
-
-    return () => {
-      window.removeEventListener('message', handleMessage);
-    };
-  }, [audioRef]);
+  const galleryImages = [
+    cover1Image,
+    cover2Image,
+    cover3Image,
+    lanternsImage,
+    rosesImage,
+    toastImage,
+    treasuresImage,
+    ceremonyImage
+  ];
 
   return (
     <section className="bg-white relative w-full overflow-hidden py-12">
@@ -82,32 +35,19 @@ const SaveTheDateSection = ({ audioRef }: SaveTheDateSectionProps) => {
           Save the Date
         </h2>
         
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-md" style={{ paddingBottom: '177.78%' }}>
-            <iframe
-              ref={iframeRef}
-              className="absolute inset-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/2oGPq-akTbg?enablejsapi=1&autoplay=0&mute=0&controls=1&loop=1&playlist=2oGPq-akTbg&modestbranding=1&cc_load_policy=0&iv_load_policy=3"
-              title="Lianna Chloe - Save the Date"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              data-testid="video-save-the-date"
-            />
-          </div>
+        <div className="w-full h-[600px]">
+          <DomeGallery 
+            images={galleryImages}
+            fit={0.6}
+            minRadius={500}
+            maxRadius={800}
+            segments={35}
+            imageBorderRadius="20px"
+            openedImageBorderRadius="20px"
+            grayscale={false}
+          />
         </div>
       </div>
-      
-      <style>{`
-        .ytp-title,
-        .ytp-watermark,
-        .ytp-chrome-top,
-        .ytp-show-cards-title,
-        .ytp-pause-overlay-container,
-        .ytp-ce-element,
-        .ytp-cards-teaser {
-          display: none !important;
-        }
-      `}</style>
     </section>
   );
 };
