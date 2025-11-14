@@ -91,7 +91,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                   </Button>
 
                   {/* Text */}
-                  <p className="text-primary/90 text-base italic font-serif text-center drop-shadow-lg">
+                  <p className="text-white text-base italic font-serif text-center drop-shadow-lg">
                     You're invited to celebrate with us
                   </p>
 
