@@ -3,8 +3,8 @@ import flower1Image from '@assets/flower1_1759854441524.png';
 import flowerImage from '@assets/flower_1759854441531.png';
 
 // Polaroid images
-import eleganceImage from '@assets/pre-debut7_1762962945662.jpg';
-import graceImage from '@assets/pre-debut8_1762962945662.jpg';
+import eleganceImage from '@assets/pre-debut8_1762962945662.jpg';
+import graceImage from '@assets/pre-debut7_1762962945662.jpg';
 import dreamsImage from '@assets/pre-debut9_1762962945663.jpg';
 
 interface RusticInvitationRevealProps {
