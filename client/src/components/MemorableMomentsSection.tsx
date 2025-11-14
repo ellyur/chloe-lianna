@@ -18,6 +18,16 @@ import prenup10 from '@assets/pre-debut10_1763041921347.jpg';
 import prenup11 from '@assets/pre-debut11_1763041921348.jpg';
 import prenup12 from '@assets/pre-debut12_1763041921348.jpg';
 import cover1 from '@assets/cover1_1762962621134.jpg';
+import newPhoto1 from '@assets/DSC09086_1763138805272.jpg';
+import newPhoto2 from '@assets/DSC09175_1763138805273.jpg';
+import newPhoto3 from '@assets/DSC09197_1763138805274.jpg';
+import newPhoto4 from '@assets/DSC09236_1763138805274.jpg';
+import newPhoto5 from '@assets/DSC09284_1763138805275.jpg';
+import newPhoto6 from '@assets/DSC09298_1763138805275.jpg';
+import newPhoto7 from '@assets/DSC09310_1763138805276.jpg';
+import newPhoto8 from '@assets/DSC09330_1763138805277.jpg';
+import newPhoto9 from '@assets/DSC09526_1763138805278.jpg';
+import newPhoto10 from '@assets/DSC09554_1763138805278.jpg';
 
 const MemorableMomentsSection = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
@@ -35,7 +45,17 @@ const MemorableMomentsSection = () => {
     prenup10,
     prenup11,
     prenup12,
-    'https://res.cloudinary.com/dpze6fsio/image/upload/v1763137202/dsss_ttjpxr.jpg'
+    'https://res.cloudinary.com/dpze6fsio/image/upload/v1763137202/dsss_ttjpxr.jpg',
+    newPhoto1,
+    newPhoto2,
+    newPhoto3,
+    newPhoto4,
+    newPhoto5,
+    newPhoto6,
+    newPhoto7,
+    newPhoto8,
+    newPhoto9,
+    newPhoto10
   ];
 
   return (
@@ -60,24 +80,6 @@ const MemorableMomentsSection = () => {
           <p className="text-xl font-script italic max-w-2xl mx-auto leading-relaxed text-[#0d0d0d]">
             Captured moments before forever begins
           </p>
-          
-          {/* View All Photos Button */}
-          <motion.div
-            className="mt-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-          >
-            <Button
-              onClick={() => setIsLightboxOpen(true)}
-              variant="outline"
-              className="gap-2"
-              data-testid="button-view-all-photos"
-            >
-              <Images className="w-4 h-4" />
-              View All Photos
-            </Button>
-          </motion.div>
         </motion.div>
 
         {/* Dome Gallery */}
@@ -97,6 +99,24 @@ const MemorableMomentsSection = () => {
             openedImageBorderRadius="20px"
             grayscale={false}
           />
+        </motion.div>
+
+        {/* View All Photos Button - After Dome Gallery */}
+        <motion.div
+          className="text-center mt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1.4 }}
+        >
+          <Button
+            onClick={() => setIsLightboxOpen(true)}
+            variant="outline"
+            className="gap-2"
+            data-testid="button-view-all-photos"
+          >
+            <Images className="w-4 h-4" />
+            View All Photos
+          </Button>
         </motion.div>
       </div>
 

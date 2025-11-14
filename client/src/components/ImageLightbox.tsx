@@ -54,15 +54,15 @@ const ImageLightbox = ({ images, isOpen, onClose, initialIndex = 0 }: ImageLight
         onClick={onClose}
         data-testid="lightbox-overlay"
       >
-        {/* Close button */}
+        {/* Close/Exit button */}
         <Button
-          size="icon"
-          variant="ghost"
-          className="absolute top-4 right-4 text-white hover:bg-white/20 z-10"
+          variant="outline"
+          className="absolute top-4 right-4 text-white border-white/30 hover:bg-white/20 bg-black/40 z-10 gap-2"
           onClick={onClose}
           data-testid="button-close-lightbox"
         >
-          <X className="w-6 h-6" />
+          <X className="w-5 h-5" />
+          Exit
         </Button>
 
         {/* Previous button */}
