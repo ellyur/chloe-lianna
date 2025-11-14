@@ -1,5 +1,9 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Images } from 'lucide-react';
 import DomeGallery from './DomeGallery';
+import ImageLightbox from './ImageLightbox';
+import { Button } from '@/components/ui/button';
 
 // Local pre-debut photos
 import prenup1 from '@assets/pre-debut1_1763041921343.jpg';
@@ -16,6 +20,8 @@ import prenup12 from '@assets/pre-debut12_1763041921348.jpg';
 import cover1 from '@assets/cover1_1762962621134.jpg';
 
 const MemorableMomentsSection = () => {
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+
   const images = [
     cover1,
     prenup1,
@@ -54,6 +60,24 @@ const MemorableMomentsSection = () => {
           <p className="text-xl font-script italic max-w-2xl mx-auto leading-relaxed text-[#0d0d0d]">
             Captured moments before forever begins
           </p>
+          
+          {/* View All Photos Button */}
+          <motion.div
+            className="mt-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+          >
+            <Button
+              onClick={() => setIsLightboxOpen(true)}
+              variant="outline"
+              className="gap-2"
+              data-testid="button-view-all-photos"
+            >
+              <Images className="w-4 h-4" />
+              View All Photos
+            </Button>
+          </motion.div>
         </motion.div>
 
         {/* Dome Gallery */}
@@ -75,6 +99,14 @@ const MemorableMomentsSection = () => {
           />
         </motion.div>
       </div>
+
+      {/* Image Lightbox */}
+      <ImageLightbox
+        images={images}
+        isOpen={isLightboxOpen}
+        onClose={() => setIsLightboxOpen(false)}
+        initialIndex={0}
+      />
     </motion.section>
   );
 };
