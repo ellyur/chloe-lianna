@@ -49,7 +49,7 @@ const Footer = () => {
             <p className="text-foreground text-sm">
               With love and gratitude,
             </p>
-            <p className="text-foreground" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
+            <p className="text-foreground text-3xl sm:text-4xl" style={{ fontFamily: 'Boska, serif', fontWeight: 700 }}>
               Lianna Chloe
             </p>
           </div>

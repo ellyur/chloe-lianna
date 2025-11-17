@@ -49,7 +49,7 @@ const Index = () => {
         preload="auto"
         style={{ display: 'none' }}
         data-testid="background-audio"
-        src="https://res.cloudinary.com/dwvcp9otb/video/upload/v1763374791/Untitled_video_-_Made_with_Clipchamp_aakrag.mp4"
+        src="https://res.cloudinary.com/dwvcp9otb/video/upload/v1763378498/Untitled_video_-_Made_with_Clipchamp_xkimty.mp4"
       />
 
       <MusicConsentPopup 
