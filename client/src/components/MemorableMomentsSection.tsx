@@ -5,57 +5,28 @@ import DomeGallery from './DomeGallery';
 import ImageLightbox from './ImageLightbox';
 import { Button } from '@/components/ui/button';
 
-// Local pre-debut photos
-import prenup1 from '@assets/pre-debut1_1763041921343.jpg';
-import prenup2 from '@assets/pre-debut2_1763041921343.jpg';
-import prenup3 from '@assets/pre-debut3_1763041921344.jpg';
-import prenup4 from '@assets/pre-debut4_1763041921345.jpg';
-import prenup5 from '@assets/pre-debut5_1763041921345.jpg';
-import prenup6 from '@assets/pre-debut6_1763041921346.jpg';
-import prenup7 from '@assets/pre-debut7_1763041921346.jpg';
-import prenup8 from '@assets/pre-debut8_1763041921347.jpg';
-import prenup10 from '@assets/pre-debut10_1763041921347.jpg';
-import prenup11 from '@assets/pre-debut11_1763041921348.jpg';
-import prenup12 from '@assets/pre-debut12_1763041921348.jpg';
-import cover1 from '@assets/cover1_1762962621134.jpg';
-import newPhoto1 from '@assets/DSC09086_1763138805272.jpg';
-import newPhoto2 from '@assets/DSC09175_1763138805273.jpg';
-import newPhoto3 from '@assets/DSC09197_1763138805274.jpg';
-import newPhoto4 from '@assets/DSC09236_1763138805274.jpg';
-import newPhoto5 from '@assets/DSC09284_1763138805275.jpg';
-import newPhoto6 from '@assets/DSC09298_1763138805275.jpg';
-import newPhoto7 from '@assets/DSC09310_1763138805276.jpg';
-import newPhoto8 from '@assets/DSC09330_1763138805277.jpg';
-import newPhoto9 from '@assets/DSC09526_1763138805278.jpg';
-import newPhoto10 from '@assets/DSC09554_1763138805278.jpg';
-
 const MemorableMomentsSection = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   const images = [
-    cover1,
-    prenup1,
-    prenup2,
-    prenup3,
-    prenup4,
-    prenup5,
-    prenup6,
-    prenup7,
-    prenup8,
-    prenup10,
-    prenup11,
-    prenup12,
-    'https://res.cloudinary.com/dpze6fsio/image/upload/v1763137202/dsss_ttjpxr.jpg',
-    newPhoto1,
-    newPhoto2,
-    newPhoto3,
-    newPhoto4,
-    newPhoto5,
-    newPhoto6,
-    newPhoto7,
-    newPhoto8,
-    newPhoto9,
-    newPhoto10
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374885/DSC09821_acr1es.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374885/DSC09843_ewbz9r.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374866/DSC09767_tjmoud.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374838/DSC09764_zs57jb.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374807/DSC09708_dvs5le.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374806/DSC09526_xfbel5.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374806/DSC09298_gg8alm.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374807/DSC09757_t7xzpc.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374806/DSC09554_q27tx4.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374806/DSC09310_doi0s0.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374807/DSC09657_xxdi22.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374806/DSC09633_aldkvt.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374805/DSC09175_lw9t7n.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374806/DSC09284_szwbp6.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374805/DSC09330_rrp0if.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374805/DSC09197_qcogzw.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374804/DSC09236_vvomo7.jpg',
+    'https://res.cloudinary.com/dwvcp9otb/image/upload/v1763374803/DSC09086_jptnqz.jpg'
   ];
 
   return (

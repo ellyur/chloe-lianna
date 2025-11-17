@@ -9,7 +9,7 @@ import treasuresChloeImage from '@assets/treasures_1763128225008.jpg';
 
 // Import the name list images (green cards with gold text)
 import lanternsListImage from '@assets/lanterns_list.jpg';
-import rosesListImage from '@assets/roses_list.jpg';
+import rosesListImage from '@assets/ROSES - FINAL (1)_1763375244509.jpg';
 import toastListImage from '@assets/toast_list.jpg';
 import treasuresListImage from '@assets/treasures_list.jpg';
 
