@@ -95,7 +95,7 @@ const RSVPSection = () => {
                   Responding on or before the deadline will help us finalize our guest list. Fill out the form above.
                 </p>
                 <p className="text-center">
-                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary">THE DEADLINE IS ON NOVEMBER 30, 2025</span>
+                  <span className="font-body md:text-lg font-bold px-3 py-1 rounded whitespace-nowrap text-[12px] text-primary-foreground bg-primary">THE DEADLINE IS ON DECEMBER 4, 2025</span>
                 </p>
               </div>
             </motion.div>
