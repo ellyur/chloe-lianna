@@ -12,7 +12,6 @@ import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
 import VenueSection from '@/components/VenueSection';
 import DressCodeSection from '@/components/DressCodeSection';
-import HashtagGiftsSection from '@/components/HashtagGiftsSection';
 import EntourageSection from '@/components/EntourageSection';
 import RSVPSection from '@/components/RSVPSection';
 import MemorableMomentsSection from '@/components/MemorableMomentsSection';
@@ -50,7 +49,7 @@ const Index = () => {
         preload="auto"
         style={{ display: 'none' }}
         data-testid="background-audio"
-        src="https://res.cloudinary.com/dgwqiv95y/video/upload/v1763128421/Lana_Del_Rey_-_Say_Yes_To_Heaven_Lyrics_xmgyjz.mp3"
+        src="https://res.cloudinary.com/dwvcp9otb/video/upload/v1763374791/Untitled_video_-_Made_with_Clipchamp_aakrag.mp4"
       />
 
       <MusicConsentPopup 
@@ -79,7 +78,6 @@ const Index = () => {
           imageUrl={cover2Image}
           alt="Lianna Chloe Debut Cover 2"
         />
-        <HashtagGiftsSection />
         <RSVPSection />
         <CoverSection
           imageUrl={cover3Image}
